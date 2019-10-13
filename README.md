@@ -33,7 +33,7 @@ Categorizing mirrorless cameras based on k-means
 - タッチパネル
     - 1：あり
     - 0：なし
-- AF検出点
+- 位相差AF検出点
 - 顔検出
     - 1：あり
     - 0：なし

@@ -9,6 +9,12 @@ Categorizing mirrorless cameras based on k-means
     - 食わせるデータ
 - main.py
     - data.csvをもとに分類するコード
+- optimizeNumberOfClusters.py
+    - 最適なクラスター数の検討用コード（エルボー法）
+
+# 使い方
+- optimizeNumberOfClusters.pyで図示されるグラフから，最適なクラスター数を検討する
+- main.py中のn_clustersの値を検討した値に置き換えて実行する
 
 # データ項目
 - 機種名

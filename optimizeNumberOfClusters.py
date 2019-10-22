@@ -12,8 +12,8 @@ df = df.drop(columns='機種名')
 # numpyに変更
 array = df.to_numpy()
 
-# クラスタ数n=2～30でクラスター分析を行う
-n_range = [i for i in range(2, 31)]
+# クラスタ数n=2～データ数でクラスター分析を行う
+n_range = [i for i in range(2, len(df))]
 sse = [] # クラスター内誤差の平方和を格納する
 for n in n_range:
     kmeans = KMeans(n_clusters=n).fit(array)

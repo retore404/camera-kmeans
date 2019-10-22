@@ -9,7 +9,7 @@ df = pd.read_csv('data.csv')
 nameDf = df['機種名']
 
 # 分析用データから機種名を削除
-df = df.drop(columns='機種名')
+del df['機種名']
 
 # numpyに変更
 array = df.to_numpy()
